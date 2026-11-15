@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="6dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- Vendor Name -->
+        <TextView
+            android:id="@+id/tvVendorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vendor Name"
+            android:textColor="#58287F"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Phone Number -->
+        <TextView
+            android:id="@+id/tvVendorPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Phone: 0771234567"
+            android:textColor="#343A40"
+            android:textSize="14sp" />
+
+        <!-- Address -->
+        <TextView
+            android:id="@+id/tvVendorAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Address: Colombo"
+            android:textColor="#6C757D"
+            android:textSize="13sp" />
+
+        <!-- Delete amd Edit Button Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEditVendor"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#E0C3FC"
+                android:text="Edit"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+            <Button
+                android:id="@+id/btnDeleteVendor"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:backgroundTint="#DC3545"
+                android:text="Delete"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="4dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add New /Edit Product"
+                android:textColor="#58287F"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etProductName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_simple_input"
+            android:hint="Product Name"
+            android:inputType="text"
+            android:paddingHorizontal="16dp"
+            android:textColor="#212121"
+            android:textSize="16sp" />
+
+
+
+        <!-- Product Price Input (LKR) -->
+        <EditText
+            android:id="@+id/etProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_simple_input"
+            android:hint="Price (LKR)"
+            android:inputType="numberDecimal"
+            android:paddingHorizontal="16dp"
+            android:textColor="#212121"
+            android:textSize="16sp" />
+
+        <!-- Product Quantity Input -->
+        <EditText
+            android:id="@+id/etProductQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_simple_input"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:paddingHorizontal="16dp"
+            android:textColor="#212121"
+            android:textSize="16sp" />
+
+        <!-- Vendor Selection Dropdown Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Select Vendor"
+            android:textColor="#343A40"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Spinner for Vendors -->
+        <Spinner
+            android:id="@+id/spinnerVendor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveProduct"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:backgroundTint="#58287F"
+            android:text="Add Item To Inventory"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:cornerRadius="8dp" />
+
+    </LinearLayout>
+</ScrollView>
